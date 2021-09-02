@@ -1,0 +1,354 @@
+*{
+    scroll-behavior: smooth;
+}
+header{
+    margin-bottom:50px ;
+}
+.navbar{
+    background:linear-gradient(to right, #111 70%, #bbb);
+    color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999999999;
+}
+.navbar .navbar-brand img{
+    width: 95px;
+    height: 44px;
+
+}
+.navbar-toggler{
+    padding: 0;
+}
+.navbar-toggler-icon{
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    transition: all .5s;
+}
+.navbar-toggler-icon:hover{
+    transform: scale(1.125);
+}
+.navbar-toggler-icon span{
+    width: 79%;
+    height: 2px;
+    background-color: black;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+
+.navbar .collapse ul li a.nav-link{
+    color: wheat;
+    font-family: cursive;
+    font-weight: 300;
+    transition: all 0.3s;
+    margin: 0px 10px;
+    text-transform: capitalize;
+}
+
+.navbar .collapse ul li a.nav-link:hover{
+    background-color: white;
+    border-radius: 20px;
+    text-decoration:underline;
+    color: black;
+}
+
+#about{
+    width: 100%;
+background: linear-gradient(to right, #111 70%, #bbb);
+  padding: 50px 0px;
+    margin-bottom: 50px;
+}
+#about>h1{
+    text-align:center;
+    color: white;
+}
+
+#about .hr1{
+    width: 50%;
+    height: 2px;
+    background-image: linear-gradient(to right, #111, rgb(233, 66, 94), #111);
+    border-radius: 95%;
+    margin: auto;
+}
+#about .hr2{
+    border: 1px dashed white;
+    width: 35%;
+}
+#about .hr2:last-of-type{
+    width: 25%;
+}
+
+#about .container .left img{
+    width: 100%;
+    height: 100%;
+}
+
+#about .container .right .text{
+color: white;
+margin-bottom: 40px;
+font-family: 'Akaya Telivigala', cursive;
+}
+
+
+
+#gallary{
+    width: 100%;
+    background-image: linear-gradient(to right, #111 70%, #bbb);
+        padding: 50px 0px;
+    margin-bottom: 50px;
+}
+#gallary>h1{
+    text-align:center;
+    color: white;
+    text-transform: capitalize;
+}
+
+#gallary .hr1{
+    width: 50%;
+    height: 2px;
+    background-image: linear-gradient(to right, #111, rgb(233, 66, 94), #111);
+    border-radius: 95%;
+    margin: auto;
+}
+#gallary .hr2{
+    border: 1px dashed white;
+    width: 35%;
+}
+#gallary .hr2:last-of-type{
+    width: 25%;
+}
+
+#gallary .container .nav-pills{
+    text-transform: capitalize;
+    margin-top: 75px ;
+    border: 1px solid black ;
+    border-radius: 20px;
+
+
+}
+#gallary .container .nav-pills .nav-item {
+    color: black !important;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: .5s all;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#gallary .container .nav-pills .nav-item:hover{
+    background-color: white !important;
+    color: black !important;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.active1{
+    background-color: white !important;
+    color: black !important;
+    font-weight: bold;
+    border-radius: 20px;
+}
+#gallary .container > div{
+    display: none;
+}
+
+#gallary .container .show1{
+    display: block;
+}
+
+
+.nav-pills .nav-item a:hover{
+    background-color: white !important;
+    color: black !important;
+    font-weight: bold;
+}
+
+#gallary .container .box{
+margin-top: 50px;
+height: 250px;
+position: relative;
+border-radius: 50px;
+overflow: hidden;
+cursor: pointer;
+}
+
+#gallary .container .box::before{
+    content: 'Branding _Illustration';
+    display: flex;
+    font-size: 25px;
+    font-family: monospace;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align:center;
+    color: rgb(0, 47, 255);
+    top: 100%;
+    right: 100%;
+    background: linear-gradient(to right, #111 70%, #bbb);
+    opacity: .9;
+    transition: .5s all;
+}
+
+#gallary .container .box:hover::before{
+    top: 0;
+    right: 0;
+}
+
+#gallary .container .box img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+}
+
+#contact{
+    width: 100%;
+    background-image: linear-gradient(to right, #111 70%, #bbb);
+        padding: 50px 0px;
+    margin-bottom: 50px;
+}
+#contact>h1{
+    text-align:center;
+    color: white;
+    text-transform: capitalize;
+}
+
+#contact .hr1{
+    width: 50%;
+    height: 2px;
+    background-image: linear-gradient(to right, #111, rgb(233, 66, 94), #111);
+    border-radius: 95%;
+    margin: auto;
+}
+#contact .hr2{
+    border: 1px dashed white;
+    width: 35%;
+}
+#contact .container{
+    padding-top: 50px;
+}
+#contact .hr2:last-of-type{
+    width: 25%;
+}
+#contact .left{
+    margin-bottom: 40px;
+}
+#contact .left h1{
+    color: white;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#contact .left form > div{
+width: 100%;
+margin-bottom: 20px;
+}
+
+#contact .left form > div label{
+    color: white;
+}
+
+#contact .left form > div input{
+    width: 100%;
+}
+
+footer{
+    width: 100%;
+    padding-top: 50px;
+    background-color: #26272b;
+}
+
+
+footer h2{
+    text-transform: uppercase;
+    font-size: 20px;
+    color: white;
+}
+footer p,footer a{
+    color: gray;
+}
+footer p{
+    line-height: 31px;
+}
+
+footer a{
+    display: block;
+    margin-bottom: 8px;
+    transition: .3s all;
+    text-transform: capitalize;
+}
+
+footer a:hover{
+    margin-left: 5px;
+    text-decoration:none;
+    color: gray;
+    
+}
+footer .container >hr{
+    border: 1px solid gray;
+    margin-bottom: 10px;
+}
+
+footer .container .down{
+    margin: auto;
+    color: gray;
+    overflow: hidden;
+}
+footer .container .down span:nth-of-type(1){
+    font-size: 15px;
+    margin-top: 10px;
+    display: inline-block;
+}
+footer .container .down span:nth-of-type(2),footer .container .down span:nth-of-type(3){
+    display: inline-block;
+    float: right;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 6px;
+    margin-right: 0;
+    text-align:center;
+    border-radius: 100%;
+    font-size: 25px;
+    background-color: #33353d;
+    
+
+}
+footer .container .down >span .span2{
+    transition: .3s all;
+    color: gray !important;
+}
+footer .container .down >span .span2:hover{
+    color: white !important;
+    cursor: pointer;
+}
+
+
+body::-webkit-scrollbar{
+    width: 22px;
+    background-image: linear-gradient( to left, #111 50%, #bbb 50%);
+}
+
+
+body::-webkit-scrollbar-button {
+    background-image: linear-gradient(to right, #111 50%, #bbb 50%);
+  border-radius: 50px;
+  height: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to right, #111 50%, #bbb 50%);
+  border-radius: 70px;
+}
+
+
+
+
+
+
+
